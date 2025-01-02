@@ -28,8 +28,9 @@ The key idea is to traverse the pairs diagonally, covering pairs in increasing s
 1. It guarantees that we eventually reach every possible pair (m, n), even as m, n to $\infty$ .
 2. In cases with finite limits, it allows us to reach specific pairs more efficiently than a row-by-row sequential approach.
 
-<img src="GeneratedPairs.png" alt="Generated Pairs" width="300">
-
+<div style="background-color: white; padding: 10px; display: inline-block;">
+  <img src="GeneratedPairs.png" alt="Generated Pairs" width="300">
+</div>
 
 ### Use of this pair generator
 
