@@ -13,14 +13,14 @@ This method ensures that every pair is eventually listed, even when the set is i
 The key idea is to traverse the pairs diagonally, covering pairs in increasing sums \(m + n\). For each diagonal, the pairs are listed starting from the smallest \(m\) and incrementing \(n\).
 
 ### Example of Zig-Zag Enumeration
-- \(1^{\text{st}}\) diagonal: \((1,1)\)
-- \(2^{\text{nd}}\) diagonal: \((1,2), (2,1)\)
-- \(3^{\text{rd}}\) diagonal: \((1,3), (2,2), (3,1)\)
-- \(4^{\text{th}}\) diagonal: \((1,4), (2,3), (3,2), (4,1)\)
-- \(5^{\text{th}}\) diagonal: \((1,5), (2,4), (3,3), (4,2), (5,1)\)
+- 1st diagonal: (1,1)
+- 2nd diagonal: (1,2), (2,1)
+- 3rd diagonal: (1,3), (2,2), (3,1)
+- 4th diagonal: (1,4), (2,3), (3,2), (4,1)
+- 5th diagonal: (1,5), (2,4), (3,3), (4,2), (5,1)
 
 ### Why Zig-Zag?
-1. It guarantees that we eventually reach every possible pair \((m, n)\), even as \(m, n \to \infty\).
+1. It guarantees that we eventually reach every possible pair (m, n), even as m, n to $\infty$ .
 2. In cases with finite limits, it allows us to reach specific pairs more efficiently than a row-by-row sequential approach.
 
 
@@ -28,7 +28,7 @@ The key idea is to traverse the pairs diagonally, covering pairs in increasing s
 ### Use of this pair generator
 
 This pair generator is used in the proof of why the language Lne is recursively enumerable.
-We could go over all i,j pairs and simulate the string \( W_{i} \) \( j\) steps on a turing machine M to see if it will accept the string or not.
+We could go over all i,j pairs and simulate the string  Wi  j steps on a turing machine M to see if it will accept the string or not.
 We use the pair generator to ensure all i,j pairs will be "eventually" checked.
 This part will make more sense if you have taken a theory of compuation course.
 
