@@ -4,13 +4,13 @@ Obviously I generated this .md with the help of ChatGPT, automation exists for a
 
 ## Concept Overview
 
-In mathematics, particularly in the context of cardinality of sets, we often consider the challenge of listing all pairs of natural numbers \((m, n)\) from \((1,1)\) to \((\infty, \infty)\). 
-A straightforward sequential approach would involve fixing \(m = 1\) and iterating over \(n\), then moving to \(m = 2\), and so on. However,
+In mathematics, particularly in the context of cardinality of sets, we often consider the challenge of listing all pairs of natural numbers $(m, n)$ from $(1,1)$ to $(\infty, \infty)$ . 
+A straightforward sequential approach would involve fixing $m = 1$ and iterating over $n$, then moving to $m = 2$, and so on. However,
 this method has a critical flaw: it would never move beyond the first row for infinite sets.
 
 To address this, we use a **zig-zag enumeration**. 
 This method ensures that every pair is eventually listed, even when the set is infinite. 
-The key idea is to traverse the pairs diagonally, covering pairs in increasing sums \(m + n\). For each diagonal, the pairs are listed starting from the smallest \(m\) and incrementing \(n\).
+The key idea is to traverse the pairs diagonally, covering pairs in increasing sums.
 
 ### Example of Zig-Zag Enumeration
 - 1st diagonal: (1,1)
@@ -27,8 +27,8 @@ The key idea is to traverse the pairs diagonally, covering pairs in increasing s
 
 ### Use of this pair generator
 
-This pair generator is used in the proof of why the language $L_{ne} = \{<M>: L(M) \ne \phi \} $ is recursively enumerable.
-We could go over all i,j pairs and simulate the string  $W_{i}$  $j$ steps on a turing machine M to see if it will accept the string or not.
+This pair generator is used in the proof of why the language $L_{ne} = \{<M>: L(M) != phi \} $ is recursively enumerable.
+We could go over all i,j pairs and simulate the string  $W_{i}$,  $j$ steps on a turing machine M to see if it will accept the string or not.
 We use the pair generator to ensure all i,j pairs will be "eventually" checked.
 This part will make more sense if you have taken a theory of compuation course.
 
