@@ -27,7 +27,7 @@ The key idea is to traverse the pairs diagonally, covering pairs in increasing s
 
 ### Use of this pair generator
 
-This pair generator is used in the proof of why the language $L_{ne} = \{<M>: L(M) != phi \} $ is recursively enumerable.
+This pair generator is used in the proof of why the language $L_{ne} = \{ \<M\> :  L(M) != phi \} $ is recursively enumerable.
 We could go over all i,j pairs and simulate the string  $W_{i}$,  $j$ steps on a turing machine M to see if it will accept the string or not.
 We use the pair generator to ensure all i,j pairs will be "eventually" checked.
 This part will make more sense if you have taken a theory of compuation course.
