@@ -1,12 +1,17 @@
 Obviously I generated this .md with the help of ChatGPT, automation exists for a reason.
 
 # Zig-Zag Enumeration of Pairs
-
 ## Concept Overview
 
 In mathematics, particularly in the context of cardinality of sets, we often consider the challenge of listing all pairs of natural numbers $(m, n)$ from $(1,1)$ to $(\infty, \infty)$ . 
+
+<img src="Pairs.png" alt="Pairs" width="300">
+
 A straightforward sequential approach would involve fixing $m = 1$ and iterating over $n$, then moving to $m = 2$, and so on. However,
 this method has a critical flaw: it would never move beyond the first row for infinite sets.
+
+<img src="SequentialPairs.png" alt="Sequential Pairs" width="300">
+
 
 To address this, we use a **zig-zag enumeration**. 
 This method ensures that every pair is eventually listed, even when the set is infinite. 
@@ -23,6 +28,7 @@ The key idea is to traverse the pairs diagonally, covering pairs in increasing s
 1. It guarantees that we eventually reach every possible pair (m, n), even as m, n to $\infty$ .
 2. In cases with finite limits, it allows us to reach specific pairs more efficiently than a row-by-row sequential approach.
 
+<img src="GeneratedPairs.png" alt="Generated Pairs" width="300">
 
 
 ### Use of this pair generator
@@ -31,10 +37,3 @@ This pair generator is used in the proof of why the language $L_{ne} = \{ \<M\> 
 We could go over all i,j pairs and simulate the string  $W_{i}$,  $j$ steps on a turing machine M to see if it will accept the string or not.
 We use the pair generator to ensure all i,j pairs will be "eventually" checked.
 This part will make more sense if you have taken a theory of compuation course.
-
-<img src="GeneratedPairs.png" alt="Generated Pairs" width="300">
-<img src="Pairs.png" alt="Pairs" width="300">
-<img src="SequentialPairs.png" alt="Sequential Pairs" width="300">
-
-
-
