@@ -32,3 +32,8 @@ We could go over all i,j pairs and simulate the string  $W_{i}$,  $j$ steps on a
 We use the pair generator to ensure all i,j pairs will be "eventually" checked.
 This part will make more sense if you have taken a theory of compuation course.
 
+![Pairs](Pairs.png "Pairs Visualization")
+![Sequential Pairs](SequentialPairs.png "Sequential Pairs Visualization")
+![Generated Pairs](GeneratedPairs.png "Generated Pairs Visualization")
+
+
